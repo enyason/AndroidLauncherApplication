@@ -7,7 +7,6 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView  imageViewDrawer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +35,9 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
+//        super.onBackPressed();
 
+        loadFragment(new HomeScreenFragment());
 //        Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.fr)
     }
 }

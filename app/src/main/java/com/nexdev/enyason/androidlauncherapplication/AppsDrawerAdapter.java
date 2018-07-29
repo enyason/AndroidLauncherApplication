@@ -98,7 +98,6 @@ public class AppsDrawerAdapter extends RecyclerView.Adapter<AppsDrawerAdapter.Vi
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        TextToSpeech textToSpeech;
         public TextView textView;
         public ImageView img;
 
@@ -106,8 +105,8 @@ public class AppsDrawerAdapter extends RecyclerView.Adapter<AppsDrawerAdapter.Vi
             super(itemView);
 
             //Finds the views from our row.xml
-            textView = (TextView) itemView.findViewById(R.id.tv_app_name);
-            img = (ImageView) itemView.findViewById(R.id.app_icon);
+            textView =  itemView.findViewById(R.id.tv_app_name);
+            img = itemView.findViewById(R.id.app_icon);
 
 
 

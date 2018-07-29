@@ -33,4 +33,11 @@ public class MainActivity extends AppCompatActivity {
 
         return false;
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+//        Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.fr)
+    }
 }
